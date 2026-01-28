@@ -1,3 +1,7 @@
+# This Makefile configures "module" level compilation tools and flags
+# Basically, it applies only for the "main.c"
+
+# Read this documentation for more information and options that you can setup from this file:
 # https://developer.android.com/ndk/guides/android_mk.html
 
 LOCAL_PATH := $(call my-dir)

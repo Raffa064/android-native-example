@@ -68,7 +68,7 @@ static int engine_init_display(struct engine* engine)
     ANativeWindow_setBuffersGeometry(engine->app->window, 0, 0, format);
 
     EGLSurface surface;
-    if (!(surface = eglCreateWindowSurface(display, config, engine->app->window, NULL)))
+    if (!(surface = eglCreateWindowSurface(display, config, (EGLNativeWindowType) engine->app->window, NULL)))
     {
         LOG("error with eglCreateWindowSurface");
         return -1;
